@@ -15,6 +15,7 @@ Website Creator v1 is designed to be driven by AI agents that handle both planni
 - ⚡ **Performance Optimized**: Fast loading times and optimized assets
 - ♿ **Accessible**: WCAG 2.1 AA compliance
 - 🎨 **Customizable**: Easy to modify and extend
+- 📧 **Contact Form**: Built-in contact form with multiple service options
 
 ## Repository Structure
 
@@ -124,6 +125,20 @@ color: #667eea;
 ### Modifying Content
 
 Edit `index.html` to change the content, headings, and structure.
+
+### Setting Up the Contact Form
+
+The website includes a contact form at the bottom of the homepage. To configure it to receive messages, see the detailed guide:
+
+**[Contact Form Setup Guide](CONTACT_FORM_SETUP.md)**
+
+Quick start (using Formspree - recommended):
+1. Sign up at [formspree.io](https://formspree.io)
+2. Create a new form and get your form ID
+3. In `index.html`, replace `YOUR_FORM_ID` in the form action URL
+4. Deploy and test
+
+See `CONTACT_FORM_SETUP.md` for all available options including FormSubmit, Web3Forms, Google Forms, and more.
 
 ## Deployment
 
