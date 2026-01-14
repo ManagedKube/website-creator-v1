@@ -135,7 +135,7 @@ The website includes a contact form at the bottom of the homepage. To configure 
 Quick start (using Formspree - recommended):
 1. Sign up at [formspree.io](https://formspree.io)
 2. Create a new form and get your form ID
-3. In `index.html`, replace `YOUR_FORM_ID` in the form action URL
+3. In `index.html`, replace `REPLACE_WITH_YOUR_FORM_ID` in the form action URL
 4. Deploy and test
 
 See `CONTACT_FORM_SETUP.md` for all available options including FormSubmit, Web3Forms, Google Forms, and more.

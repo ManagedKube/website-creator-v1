@@ -29,11 +29,11 @@ Since this is a static website hosted on GitHub Pages (no backend server), you n
 2. Sign up for a free account
 3. Create a new form
 4. Copy your form endpoint URL (looks like `https://formspree.io/f/xxxxx`)
-5. In `index.html`, find the contact form and replace `YOUR_FORM_ID`:
+5. In `index.html`, find the contact form and replace the placeholder:
    ```html
-   <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+   <form id="contact-form" action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="POST">
    ```
-   Replace `YOUR_FORM_ID` with your actual form ID from Formspree
+   Replace `REPLACE_WITH_YOUR_FORM_ID` with your actual form ID from Formspree
 6. Save and deploy
 
 **Pros:**
@@ -217,7 +217,7 @@ It's the best balance of:
 - Good free tier
 - Spam protection
 
-The current implementation is ready for Formspree - you just need to replace `YOUR_FORM_ID` in `index.html` with your actual Formspree form ID.
+The current implementation is ready for Formspree - you just need to replace `REPLACE_WITH_YOUR_FORM_ID` in `index.html` with your actual Formspree form ID.
 
 ---
 

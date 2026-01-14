@@ -67,7 +67,10 @@ function initializeContactForm() {
                 form.reset();
             } else {
                 // Error from server
-                throw new Error('Form submission failed');
+                const errorMsg = `Form submission failed (${response.status}: ${response.statusText}). Please try again or contact me directly.`;
+                statusDiv.textContent = errorMsg;
+                statusDiv.className = 'form-status error';
+                statusDiv.style.display = 'block';
             }
         } catch (error) {
             // Network error or other issues
@@ -106,12 +109,10 @@ function validateField(field) {
         return false;
     }
     
-    if (field.type === 'email' && field.value) {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(field.value)) {
-            field.classList.add('invalid');
-            return false;
-        }
+    // For email fields, rely on HTML5 validation via checkValidity()
+    if (field.type === 'email' && field.value && !field.checkValidity()) {
+        field.classList.add('invalid');
+        return false;
     }
     
     field.classList.remove('invalid');
