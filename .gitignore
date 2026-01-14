@@ -1,0 +1,22 @@
+# Build artifacts
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Node modules (if using npm for tooling)
+node_modules/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Editor directories
+.vscode/
+.idea/
+
+# Environment files
+.env
+.env.local
